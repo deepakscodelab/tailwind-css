@@ -6,6 +6,7 @@ import "./index.css";
 import ErrorPage from "./error-page.jsx";
 import Login from "./components/Login.jsx";
 import Playground from "./components/Playground.jsx";
+import { App as ToDesktop } from "./projects/to-desktop/App.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "login",
     element: <Login />,
+  },
+  {
+    path: "todesktop",
+    element: <ToDesktop />,
   },
   {
     path: "playground",
